@@ -1,0 +1,17 @@
+server:
+  port: 8010
+#导出参数配置
+export:
+  headers:
+    people: UUID,姓名,出生日期,性别,邮箱,住址
+  fields:
+    people: uuid,name,birth,sex,email,address
+  titles:
+    people: 人员信息
+#导入参数配置
+import:
+  people:
+    cellCount: 6
+    fieldNames: uuid,name,birth,sex,email,address
+    dateFields: birth
+
